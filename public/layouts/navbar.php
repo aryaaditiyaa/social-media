@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-md navbar-light bg-light fixed-top py-3">
+<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top py-3">
     <div class="container">
         <a class="navbar-brand" href="http://localhost/paw-tugas-uts/public">Social Media</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"

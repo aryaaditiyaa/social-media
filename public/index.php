@@ -3,8 +3,8 @@
 
 <div class="container">
     <div class="row">
-        <div class="row">
-            <h1>aaaaaaaaaaaaaaa</h1>
+        <div class="col">
+            <p>Hello, World!</p>
         </div>
     </div>
 </div>
