@@ -24,7 +24,7 @@ class User
             'email' => $this->email,
             'nama' => $this->nama,
             'password' => password_hash($this->password, PASSWORD_DEFAULT),
-            'nama_belakang' => $this->namabelakang,
+            'namabelakang' => $this->namabelakang,
             'photo' => $this->photo,
             'created_at' => $this->created_at
         ];
@@ -54,7 +54,7 @@ class User
             'email' => $this->email,
             'nama' => $this->nama,
             'password' => password_hash($this->password, PASSWORD_DEFAULT),
-            'nama_belakang' => $this->namabelakang,
+            'namabelakang' => $this->namabelakang,
             'photo' => $this->photo,
             'updated_at' => $this->updated_at,
             'id' => $this->id
@@ -164,7 +164,7 @@ class User
         return $hasil;
     }
 
-    public function search_with_id($id)
+    public function cari_dgn_id($id)
     {
         global $db;
         $hasil = 0;
