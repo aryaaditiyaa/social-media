@@ -1,3 +1,13 @@
+<?php
+
+$logged = false;
+$nama = '';
+if (isset($session)) {
+    $logged = $session->user_sudahlogin();
+    $nama = $session->nama();
+}
+
+?>
 <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top py-2">
     <div class="container">
         <a class="navbar-brand" href="http://localhost/paw-tugas-uts/public">Social Media</a>
@@ -25,10 +35,17 @@
                 </li>
             </ul>
             <div class="navbar-nav">
-                <a href="http://localhost/social-media/public/pages/login.php"
-                   class="btn btn-outline-success my-2 my-sm-0">Login</a>
-                <a href="http://localhost/social-media/public/pages/register.php"
-                   class="btn btn-success my-2 my-sm-0 ml-2">Register</a>
+                <?php if (!$logged) : ?>
+                    <a href="http://localhost/social-media/public/pages/login.php"
+                       class="btn btn-outline-success my-2 my-sm-0">Login</a>
+                    <a href="http://localhost/social-media/public/pages/register.php"
+                       class="btn btn-success my-2 my-sm-0 ml-2">Register</a>
+                <?php endif ?>
+                <?php if ($logged) : ?>
+                    <a class="nav-link">Hi <?php echo $nama ?></a>
+                    <a href="http://localhost/social-media/public/pages/logout.php"
+                       class="btn btn-outline-danger my-2 my-sm-0 ml-2">Logout</a>
+                <?php endif ?>
             </div>
         </div>
     </div>

@@ -19,7 +19,7 @@ class Session
     {
         if (isset($_SESSION['uid'])) {
             $this->uid = $_SESSION['uid'];
-            $this->sudahlogin = true;
+            $this->sudahlogin = $this->uid;
         } else {
             unset($this->uid);
             $this->sudahlogin = false;

@@ -104,7 +104,7 @@ class User
             ':email' => $email
         ];
 
-        $sql = "SELECT FROM " . self::$namatable . " WHERE (email = :email)";
+        $sql = "SELECT * FROM " . self::$namatable . " WHERE (email = :email)";
         try {
             $stmt = $conn->prepare($sql);
             $stmt->execute($data);
@@ -171,10 +171,10 @@ class User
         $conn = $db->connection;
 
         $sql = "SELECT * FROM " . self::$namatable;
-        $sql .= " WHERE id = :id LIMIT 1";
+        $sql .= " WHERE id=:id LIMIT 1";
 
         $data = [
-            'id' => $id
+            ':id' => $id
         ];
 
         try {

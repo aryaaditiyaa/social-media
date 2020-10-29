@@ -21,7 +21,6 @@ if (isset($session)) {
         $nama = $user['nama'];
         $namabelakang = $user['namabelakang'];
         $fname = $nama . ' ' . $namabelakang;
-
     }
 }
 ?>
@@ -36,7 +35,7 @@ if (isset($session)) {
 
             <div class="profile-image">
 
-                <img src="/iamges/<?php echo $user['photo'] ?>"
+                <img src="images/<?php echo $user['photo'] ?>"
                      alt="">
 
             </div>
