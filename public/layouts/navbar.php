@@ -24,7 +24,7 @@ if (isset($session)) {
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="">
+                    <a class="nav-link" href="http://localhost/social-media/public/pages/listuser.php">
                         User
                     </a>
                 </li>
