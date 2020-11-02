@@ -10,7 +10,7 @@ Flexbox and floats are used as a fallback so that browsers which don't support g
 
 /* Base Styles */
 :root {
-    font-size: 10px;
+    font-size: 12px;
 }
 
 *,
@@ -25,7 +25,7 @@ body {
     background-color: #fafafa;
     color: #262626;
     padding-bottom: 3rem;
-    font-size: 1.6rem;
+    font-size: 1.45rem;
 }
 
 img {
@@ -36,12 +36,6 @@ ul {
     padding-inline-start: 0 !important;
 }
 
-.container {
-    max-width: 93.5rem;
-    margin: 0 auto;
-    padding: 0 2rem;
-}
-
 .visually-hidden {
     position: absolute !important;
     height: 1px;
@@ -49,6 +43,16 @@ ul {
     overflow: hidden;
     clip: rect(1px, 1px, 1px, 1px);
 }
+
+.navbar-brand {
+    font-size: 1.45rem !important;
+}
+
+#logout {
+    font-size: 1.2rem !important;
+    padding: .6rem .9rem;
+}
+
 /* Profile Section */
 
 .profile {
@@ -200,8 +204,9 @@ ul {
 
 .gallery-image {
     width: 100%;
-    height: 100%;
+    height: 320px;
     object-fit: cover;
+    object-position: center;
 }
 
 /* Loader */

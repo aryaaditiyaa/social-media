@@ -29,7 +29,7 @@ if (isset($session)) {
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="">
+                    <a class="nav-link" href="http://localhost/social-media/public/pages/newpost.php">
                         Post
                     </a>
                 </li>
@@ -44,7 +44,7 @@ if (isset($session)) {
                 <?php if ($logged) : ?>
                     <a class="nav-link">Hi <?php echo $nama ?></a>
                     <a href="http://localhost/social-media/public/pages/logout.php"
-                       class="btn btn-outline-danger my-2 my-sm-0 ml-2">Logout</a>
+                       class="btn btn-outline-danger my-2 my-sm-0 ml-2" id="logout">Logout</a>
                 <?php endif ?>
             </div>
         </div>

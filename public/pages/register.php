@@ -32,7 +32,7 @@ if (isset($_POST['save'])) {
         $session->nama($user->nama);
         $pesan = "Hi, " . $user->nama . " Welcome.";
         $session->pesan($pesan);
-        redirect_ke("#");
+        redirect_ke("http://localhost/social-media/public/");
     } else {
         redirect_ke("http://localhost/social-media/public/pages/register.php");
     }
