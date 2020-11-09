@@ -85,7 +85,7 @@ $userposts = $post->cari_userpost($visiteduid);
         <div class="gallery">
 
             <?php foreach ($userposts as $item) : ?>
-                <a href="/detailpost.php?pid=<?php echo $item['id'] ?>">
+                <a href="pages/detailpost.php?pid=<?php echo $item['id'] ?>">
                     <div class="gallery-item" tabindex="0">
 
                         <img src="images/<?php echo $item['photo'] ?>"

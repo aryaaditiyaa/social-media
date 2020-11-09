@@ -10,7 +10,7 @@ if (isset($session)) {
 ?>
 <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top py-2">
     <div class="container">
-        <a class="navbar-brand" href="http://localhost/paw-tugas-uts/public">Social Media</a>
+        <a class="navbar-brand" href="http://localhost/social-media/public">Social Media</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
                 aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
