@@ -21,6 +21,7 @@ $post_user = User::cari_dgn_id($post['user_id']);
 $user = new User;
 $like = new Like;
 $like->post_id = $post_id;
+$like->user_id = $logged;
 $total = $like->totallike($post_id);
 $postliked = $like->postliked();
 
@@ -34,8 +35,8 @@ if ($postliked) {
     <link rel="stylesheet" href="../css/detailpost.css">
 
     <main role="main" class="container mt-5">
-        <input type="hidden" name="post_id" value="<?php echo $post_id ?>">
-        <input type="hidden" name="user_id" value="<?php echo $logged ?>">
+        <input type="hidden" name="post_id" id="post_id" value="<?php echo $post_id ?>">
+        <input type="hidden" name="user_id" id="user_id" value="<?php echo $logged ?>">
         <div class="row justify-content-center">
             <div class="col-lg-7">
                 <div class="card">
@@ -45,7 +46,7 @@ if ($postliked) {
                     <div class="card-footer">
                         <div class="float-left">
                             <span id="btnlike"><?php echo $hearticon ?></span>
-                            <span><?php echo $total ?></span>
+                            <span id="totallike"><?php echo $total ?></span>
                         </div>
                         <div class="float-right">
                             <i class="far fa-comment" aria-hidden="true"></i>

@@ -23,7 +23,7 @@ class Like
             'created_at' => $this->created_at
         ];
 
-        $sql = "INSERT INTO " . self::$namatable . " (user_id, post_id,, created_at)";
+        $sql = "INSERT INTO " . self::$namatable . " (user_id, post_id, created_at)";
         $sql .= " VALUES (:user_id, :post_id, :created_at)";
 
         try {
@@ -49,7 +49,7 @@ class Like
         ];
 
         $sql = "DELETE FROM " . self::$namatable;
-        $sql .= " WHERE user_id=user_id AND post_id=post_id";
+        $sql .= " WHERE user_id=:user_id AND post_id=:post_id";
 
         try {
             $stmt = $conn->prepare($sql);
@@ -72,8 +72,8 @@ class Like
             'post_id' => $this->post_id
         ];
 
-        $sql = "DELETE COUNT(*) AS num FROM " . self::$namatable;
-        $sql .= " WHERE user_id=user_id AND post_id=post_id";
+        $sql = "SELECT COUNT(*) AS num FROM " . self::$namatable;
+        $sql .= " WHERE user_id=:user_id AND post_id=:post_id";
 
         try {
             $stmt = $conn->prepare($sql);

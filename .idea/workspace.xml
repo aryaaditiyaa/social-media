@@ -21,7 +21,8 @@
   <component name="ChangeListManager">
     <list default="true" id="9508b09a-a2a5-4bff-ac6c-e30c7e3709b7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/detailpost.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/detailpost.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/like.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/like.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/layouts/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/layouts/footer.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/pages/detailpost.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/pages/detailpost.php" afterDir="false" />
     </list>
@@ -78,7 +79,7 @@
       <workItem from="1604930557476" duration="109000" />
       <workItem from="1604932550176" duration="598000" />
       <workItem from="1605004256072" duration="552000" />
-      <workItem from="1605022211696" duration="3731000" />
+      <workItem from="1605022211696" duration="6945000" />
     </task>
     <servers />
   </component>
@@ -106,6 +107,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="0" y="575" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1604919985677" />
+    <state x="0" y="0" width="1026" height="715" key="dock-window-1" timestamp="1605030711260">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="0" y="0" width="1026" height="715" key="dock-window-1/0.0.1366.728@0.0.1366.728" timestamp="1605030711260" />
     <state x="988" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1603859911252">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
