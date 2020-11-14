@@ -57,4 +57,36 @@ $( document ).ready(function() {
             }
         });
     });
+
+    $("#savepassword").click(function (e) {
+        e.preventDefault();
+        var np = $('#newpassword').val();
+        var cp = $('#confirmpassword').val();
+
+        if (cp != np){
+            alert("Pastikan password sama!")
+        }
+
+        var base_url = window.location.origin;
+
+        $.ajax({
+            type: 'POST',
+            url: base_url + '/social-media/public/pages/updatepassword.php',
+            dataType: 'json',
+            data: {newpass:np},
+            beforeSend: function () {
+                $(".loader").css("display", "block");
+            },
+            success: function (response) {
+                $('#pesan').empty();
+                $('#pesan').append(response.pesan);
+            },
+            error: function (response) {
+                console.log(response);
+            },
+            complete: function (data) {
+                $(".loader").css("display", "none");
+            }
+        });
+    });
 });

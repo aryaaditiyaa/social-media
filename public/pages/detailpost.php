@@ -46,7 +46,7 @@ $totalc = $comment->totalcomment($comment->post_id);
     <main role="main" class="container mt-5">
         <input type="hidden" name="post_id" id="post_id" value="<?php echo $post_id ?>">
         <input type="hidden" name="user_id" id="user_id" value="<?php echo $logged ?>">
-        <div class="row justify-content-center">
+        <div class="row justify-content-center mb-5">
             <div class="col-lg-7">
                 <div class="card">
                     <div>
@@ -105,9 +105,6 @@ $totalc = $comment->totalcomment($comment->post_id);
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="loade"></div>
         </div>
 
     </main><!-- /.container -->
