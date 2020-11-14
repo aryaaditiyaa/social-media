@@ -233,6 +233,6 @@ class User
             $hasil = 0;
         }
 
-        return $hasil;
+        return $hasil['photo'];
     }
 }
